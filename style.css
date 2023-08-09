@@ -19,19 +19,18 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 35px;
   margin: 40px auto;
-  text-align: center;
 }
 
-.button {
+.move-button {
   width: 100%;
   transition: width 0.15s;
-  
+
 }
 
-.button:hover {
+.move-button:hover {
   width: 105%;
 }
-.button-image {
+.move-icon {
   max-width: 100%;
   cursor: pointer;
 }
