@@ -7,33 +7,24 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="title">
-    Rock-Paper-Scissors Game
-  </div>
-
-  <div class="js-main main">
-    <div class="js-container container">
-      <div class="button">
-        <img src="images/rock.png" class="button-image" onclick="playGame('Rock')">
-        <img src="images/shadow.png" class="shadow">
-      </div>
-      <div class="button">
-        <img src="images/paper.png" class="button-image" onclick="playGame('Paper')">
-        <img src="images/shadow.png" class="shadow">
-      </div>
-      <div class="button">
-        <img src="images/scissors.png" class="button-image" onclick="playGame('Scissors')">
-        <img src="images/shadow.png" class="shadow">
-      </div>
+  <h1 class="title">Rock Paper Scissors Game</h1>
+  <div class="moves-container">
+    <div class="move-button">
+      <img src="images/rock.png" class="move-icon">
+      <img src="images/shadow.png" class="shadow">
+    </div>
+    <div class="move-button">
+      <img src="images/paper.png" class="move-icon">
+      <img src="images/shadow.png" class="shadow">
+    </div>
+    <div class="move-button">
+      <img src="images/scissors.png" class="move-icon">
+      <img src="images/shadow.png" class="shadow">
     </div>
   </div>
 
-  <div class="score">
-    YOU 2 : 1 COM
+  <div class="score-board">
+    <p>You 0 : 0 Com</p>
   </div>
-
-  <div class="game-result"></div>
-
-  <script src="script.js"></script>
 </body>
 </html>
