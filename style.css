@@ -19,6 +19,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 35px;
   margin: 40px auto;
+  align-items: center;
 }
 
 .move-button {
@@ -39,7 +40,7 @@ body {
   width: 100%;
 }
 
-.score {
+.score, .result-box {
   font-size: 3vw;
   text-align: center;
   font-weight: bold;
@@ -52,4 +53,10 @@ body {
 .game-result {
   font-size: 3vw;
   text-align: center;
+}
+
+.result-box {
+  width: 100%;
+  border: none;
+  font-size: 30px;
 }
