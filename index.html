@@ -13,16 +13,16 @@
 
   <div class="js-main main">
     <div class="js-container container">
-      <div class="move-button js-rock" onclick="generateComputerMove()">
-        <img src="images/rock.png" class="move-icon" >
+      <div class="move-button js-rock" onclick="playGame('rock')">
+        <img src="images/rock.png" class="move-icon js-rock-icon" >
         <img src="images/shadow.png" class="shadow">
       </div>
       <div class="move-button js-paper">
-        <img src="images/paper.png" class="move-icon" onclick="playGame('Paper')">
+        <img src="images/paper.png" class="move-icon js-paper-icon" onclick="playGame('Paper')">
         <img src="images/shadow.png" class="shadow">
       </div>
       <div class="move-button js-scissors">
-        <img src="images/scissors.png" class="move-icon" onclick="playGame('Scissors')">
+        <img src="images/scissors.png" class="move-icon js-scissors-icon" onclick="playGame('Scissors')">
         <img src="images/shadow.png" class="shadow">
       </div>
     </div>

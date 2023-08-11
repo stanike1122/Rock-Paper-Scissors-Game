@@ -10,10 +10,36 @@ function generateComputerMove() {
     computerMove = 'scissors';
   }
 
-  result();
+  return computerMove;
 }
 
-function result() {
+function playGame(playerMove) {
+  let playerMoveDiv = document.querySelector('.js-rock');
+  const computerMoveDiv = document.querySelector('.js-scissors');
   const resultBox = document.querySelector('.js-paper');
-  resultBox.innerHTML = `<div class="result-box">You win</div>`;
+  let result = '';
+  const computerMove = generateComputerMove();
+  
+  function playerComputerMoves() {
+    playerMoveDiv.innerHTML = `<img src="images/${playerMove}.png" 
+      class="move-icon" >`
+      resultBox.innerHTML = `<div class="result-box">${result}</div>`;
+      computerMoveDiv.innerHTML = `<img src="images/${computerMove}.png" 
+      class="move-icon" >`
+  }
+
+  if (playerMove === 'rock') {
+    if (computerMove === 'rock') {
+      result = 'Game is tie';
+      playerComputerMoves();
+    }else if (computerMove === 'paper') {
+      result = 'Computer win';
+      playerComputerMoves();
+    }else if (computerMove === 'scissors') {
+      result = 'You win';
+      playerComputerMoves();
+    }
+  }
 }
+
+
